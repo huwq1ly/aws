@@ -9,7 +9,7 @@ if [ $# = 1 ] && [ $1 = "deploy" ]; then
 fi
 
 # テンプレート名とスタック名
-CFN_TEMPLATE=''
+CFN_TEMPLATE=sample.yml
 CFN_STACK_NAME=''
 
 # テンプレートの実行
