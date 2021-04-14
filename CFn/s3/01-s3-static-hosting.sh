@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# deployオプションをつけないとチェンジセットの作成のみが実行される
 CHANGESET_OPTION="--no-execute-changeset"
 
 if [ $# = 1 ] && [ $1 = "deploy" ]; then
@@ -8,8 +7,7 @@ if [ $# = 1 ] && [ $1 = "deploy" ]; then
   CHANGESET_OPTION=""
 fi
 
-# テンプレート名とスタック名
-CFN_TEMPLATE=sample.yml
+CFN_TEMPLATE=s3-static-hosting.yml
 CFN_STACK_NAME=
 
 # テンプレートの実行
